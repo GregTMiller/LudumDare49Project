@@ -18,3 +18,5 @@ Project/Theme currently unknown, this is placeholder.
 * Create art in Clip Studio
 
 * IDE will be Visual Studio Code
+
+Confirming repo is ready
