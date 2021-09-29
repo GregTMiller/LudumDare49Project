@@ -19,4 +19,4 @@ Project/Theme currently unknown, this is placeholder.
 
 * IDE will be Visual Studio Code
 
-Confirming repo is ready
+Confirming repo is ready, testing new git client (should help with speed)
