@@ -1,7 +1,11 @@
 # LudumDare49Project
 Repo for Ludum Dare 49 Compo
 
-Project/Theme currently unknown, this is placeholder.
+# Humans Live Here
+Theme: Unstable
+Platform: PC
+Controls: Keyboard
+Genre 2D Platform
 
 # Notes
 
