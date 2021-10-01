@@ -3,8 +3,11 @@ Repo for Ludum Dare 49 Compo
 
 # Humans Live Here
 Theme: Unstable
+
 Platform: PC
+
 Controls: Keyboard
+
 Genre 2D Platform
 
 # Notes
