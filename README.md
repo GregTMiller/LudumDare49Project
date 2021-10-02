@@ -1,7 +1,7 @@
 # LudumDare49Project
 Repo for Ludum Dare 49 Compo
 
-# Humans Live Here
+# Humans Lived Here
 Theme: Unstable
 
 Platform: PC
