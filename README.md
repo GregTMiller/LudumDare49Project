@@ -22,7 +22,7 @@ Genre 2D Platform
 
 * Publish code on Github
 
-* Create art in Clip Studio
+* Create art in Clip Studio and Blender
 
 * IDE will be Visual Studio Code
 
