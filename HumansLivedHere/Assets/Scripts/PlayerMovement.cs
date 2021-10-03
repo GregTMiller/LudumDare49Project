@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 [System.Serializable]
 public class Keys
@@ -45,11 +46,14 @@ public class PlayerMovement : MonoBehaviour
     public Transform groundCheck;
     public float groundDistance;
     public LayerMask groundMask;
+    public Vector3 COM2;
+    public string sceneName;
 
     // Start is called before the first frame update
    private void Start()
     {
         RB = gameObject.GetComponent<Rigidbody2D>();
+        RB.centerOfMass = COM2;
     }
 
     // Update is called once per frame
@@ -57,6 +61,9 @@ public class PlayerMovement : MonoBehaviour
     {
         movementCheck();
         interactCheck();
+        rotationFix();
+        var currentScene = SceneManager.GetActiveScene();
+        sceneName = currentScene.name;
     }
 
 
@@ -67,7 +74,7 @@ public class PlayerMovement : MonoBehaviour
         transform.position += new Vector3(movement,0,0) * Time.deltaTime * movementSpeed;
 
         
-        if(Input.GetKey(KeyCode.Space))
+        if(Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.JoystickButton1))
         {
             if(jumpMuti < jumpMutiMax)
             {
@@ -80,8 +87,10 @@ public class PlayerMovement : MonoBehaviour
 
             }
         }
-        else if(Input.GetKeyUp(KeyCode.Space) && isGrounded == true)
+        else if(Input.GetKeyUp(KeyCode.Space) || Input.GetKeyUp(KeyCode.JoystickButton1))
         {
+            if(isGrounded == true)
+            {
             if(jumpMuti < 0.6f)
             {
                 jumpMuti = 1f;
@@ -89,6 +98,8 @@ public class PlayerMovement : MonoBehaviour
             RB.AddForce(new Vector2(0,jumpForce * jumpMuti),ForceMode2D.Impulse);
             Debug.Log("Jump!" + jumpMuti);
             jumpMuti = 0f;
+            isGrounded = false;
+            }
         }
 
     }
@@ -97,6 +108,24 @@ public class PlayerMovement : MonoBehaviour
     {
 
 
+
+    }
+
+    void rotationFix()
+    {
+
+    if(transform.rotation.z > 50f)
+    {
+
+        gameObject.transform.Rotate(new Vector3(0, 0, 50), Space.Self);
+
+    }
+    else if(transform.rotation.z < -50f)
+    {
+
+        gameObject.transform.Rotate(new Vector3(0, 0, -50), Space.Self);
+
+    }
 
     }
 
@@ -182,7 +211,5 @@ public class PlayerMovement : MonoBehaviour
         return false;
     }
     }
-    //return true;
-
 
 }

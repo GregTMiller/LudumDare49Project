@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/TitleScreen.unity
     guid: ee3e5b18646caa04687e524f46d0d221
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/TheDesert.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/LevelStreamingTest.unity
+    guid: a5273e6cc62833346a42e1909b502cac
   m_configObjects: {}

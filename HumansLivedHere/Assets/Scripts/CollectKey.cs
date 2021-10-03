@@ -11,6 +11,21 @@ public class CollectKey : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        switch (keyID)
+        {
+            case 0:
+            gameObject.GetComponent<SpriteRenderer>().color = new Color(1, 0, 0, 1);
+            break;
+            case 1:
+            gameObject.GetComponent<SpriteRenderer>().color = new Color(0, 0, 1, 1);
+            break;
+            case 2:
+            gameObject.GetComponent<SpriteRenderer>().color = new Color(0, 1, 0, 1);
+            break;
+            case 3:
+            gameObject.GetComponent<SpriteRenderer>().color = new Color(1, 1, 0, 1);
+            break;
+        }
         startPosition = transform.localPosition;
         anim.Play("Bobbing");
     }

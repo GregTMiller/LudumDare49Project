@@ -15,7 +15,7 @@ public class MenuLogic : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape) && pauseMenu != null)
+        if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyUp(KeyCode.JoystickButton7) && pauseMenu != null)
         {
             pauseUnpauseGame();
         }
@@ -25,12 +25,12 @@ public class MenuLogic : MonoBehaviour
     {
             if(Time.timeScale == 0)
             {
-                pauseMenu.SetActive(true);
+                pauseMenu.SetActive(false);
                 Time.timeScale = 1;
             }
             else
             {
-                pauseMenu.SetActive(false);
+                pauseMenu.SetActive(true);
                 Time.timeScale = 0;
             }
     }
@@ -45,7 +45,11 @@ public class MenuLogic : MonoBehaviour
 
     public void loadScene(string sceneName)
     {
-        SceneManager.LoadSceneAsync(sceneName);
+        if(pauseMenu != null)
+            pauseMenu.SetActive(false);
+
+        Time.timeScale = 1;
+        SceneManager.LoadScene(sceneName);
 
 
     }

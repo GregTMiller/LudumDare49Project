@@ -11,7 +11,6 @@ public class NPCCheck : MonoBehaviour
     void Start()
     {
         var textbox = GetComponentsInChildren<TextMeshProUGUI>();
-
         foreach (TextMeshProUGUI textInsert in textbox)
             textInsert.text = toolTipText;
         TT.SetActive(false);
