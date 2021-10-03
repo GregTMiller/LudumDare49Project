@@ -25,10 +25,12 @@ public class CoolSceneLoader : MonoBehaviour
             if(Loading)
             {
                 SceneManager.LoadSceneAsync(sceneID, LoadSceneMode.Additive);
+                Destroy(this);
             }
             else
             {
                 SceneManager.UnloadSceneAsync(sceneID);
+                Destroy(this);
             }
             
         }

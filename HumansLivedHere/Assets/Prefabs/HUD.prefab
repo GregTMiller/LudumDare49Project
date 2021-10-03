@@ -365,8 +365,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 23.03
+  m_fontSizeBase: 23.03
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -401,7 +401,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 13.263184, y: 0, z: 0, w: 0}
+  m_margin: {x: -1.7558899, y: 0, z: 100.47897, w: -23.863777}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -497,7 +497,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TT: {fileID: 1830229691186782825}
-  toolTipText: Key to The Lobby
+  toolTipText: Key to The Server Room
   isUnlocked: 0
 --- !u!1 &1830229691138502144
 GameObject:
@@ -983,7 +983,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TT: {fileID: 1830229691656075803}
-  toolTipText: Key to The Lobby
+  toolTipText: Key to The Office
   isUnlocked: 0
 --- !u!1 &1830229691586248047
 GameObject:
@@ -1080,7 +1080,7 @@ MonoBehaviour:
     m_Right: 20
     m_Top: 20
     m_Bottom: 0
-  m_ChildAlignment: 3
+  m_ChildAlignment: 0
   m_Spacing: 0
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
@@ -2565,7 +2565,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TT: {fileID: 1830229692177380938}
-  toolTipText: Key to The Lobby
+  toolTipText: Key to The Lab
   isUnlocked: 0
 --- !u!1 &1830229692329985384
 GameObject:
@@ -3786,7 +3786,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueBox: {fileID: 1830229691586248047}
   textLabel: {fileID: 1830229691091066287}
-  testObject: {fileID: 11400000, guid: 81b8a276846818b448fe90ae37afa73a, type: 2}
+  testObject: {fileID: 11400000, guid: f8e2bb20c4e5a534cb335faddf024865, type: 2}
   profileSlot: {fileID: 1684270450069570361}
   name: {fileID: 1830229692492428943}
 --- !u!114 &8480570493677050701

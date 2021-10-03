@@ -57,6 +57,7 @@ public class PlayerMovement : MonoBehaviour
     [Header("Audio")]
     public AudioSource sfxTrigger;
     public AudioClip[] sound;
+    public bool playCharge;
 
     // Start is called before the first frame update
    private void Start()
@@ -110,11 +111,14 @@ public class PlayerMovement : MonoBehaviour
             if(jumpMuti < jumpMutiMax)
             {
                 jumpMuti += 0.5f * Time.deltaTime;
-                sfxTrigger.PlayOneShot(sound[0], 0.5f);
+                
             }
             else
             {
                 Debug.Log("Max Charge!");
+                if(playCharge)
+                    sfxTrigger.PlayOneShot(sound[1], 0.5f);
+                    playCharge = false;
 
             }
         }
@@ -126,11 +130,13 @@ public class PlayerMovement : MonoBehaviour
             {
                 jumpMuti = 1f;
             }
+            sfxTrigger.PlayOneShot(sound[0], 0.5f);
             RB.AddForce(new Vector2(0,jumpForce * jumpMuti),ForceMode2D.Impulse);
             anim.SetBool("IsJumping", true);
             anim.SetTrigger("Jump");
             jumpMuti = 0f;
             isGrounded = false;
+            playCharge = true;
             }
         }
 
@@ -141,7 +147,7 @@ public class PlayerMovement : MonoBehaviour
 
         if(Input.GetKey(KeyCode.Return) || Input.GetKey(KeyCode.JoystickButton0))
         {
-                sfxTrigger.PlayOneShot(sound[1], 0.5f);
+                sfxTrigger.PlayOneShot(sound[2], 0.5f);
                 interact?.Interact(this);
         }
 
@@ -225,7 +231,7 @@ public class PlayerMovement : MonoBehaviour
             return false;
         }
         case 2:
-        if(yellowKey.keyCollected == true)
+        if(greenKey.keyCollected == true)
         {
             return true;
         }
@@ -234,7 +240,7 @@ public class PlayerMovement : MonoBehaviour
             return false;
         }
         case 3:
-        if(greenKey.keyCollected == true)
+        if(yellowKey.keyCollected == true)
         {
             return true;
         }

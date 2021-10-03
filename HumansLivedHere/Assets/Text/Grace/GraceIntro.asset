@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4641d7eb5d322144cb68bf9e9e59a5d3, type: 3}
+  m_Name: GraceIntro
+  m_EditorClassIdentifier: 
+  dialogue:
+  - Oh, it's so lovely to see you dear!
+  - How have you been? Hopefully the sand storm wasn't too bad.
+  responces:
+  - responceText: Who are you?
+    DO: {fileID: 0}
+  - responceText: Why is it so sandy?
+    DO: {fileID: 0}
+  - responceText: Gotta go, talk to you later!
+    DO: {fileID: 0}
+  profile: {fileID: 21300000, guid: 9b80f524a41fb0445a92837e99bea300, type: 3}
+  speakerName: Grace

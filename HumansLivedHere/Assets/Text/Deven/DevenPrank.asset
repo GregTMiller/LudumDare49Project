@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4641d7eb5d322144cb68bf9e9e59a5d3, type: 3}
+  m_Name: DevenPrank
+  m_EditorClassIdentifier: 
+  dialogue:
+  - 'This is not a joke, I''m sorry. You were just too close to death, I had to step
+    in and try to save you. '
+  - 'Don''t believe me? Go to the server room and open your pod. '
+  responces: []
+  profile: {fileID: 21300000, guid: be68ae584b9f17e46bbc4b4634fd132d, type: 3}
+  speakerName: Deven

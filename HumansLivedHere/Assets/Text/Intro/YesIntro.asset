@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4641d7eb5d322144cb68bf9e9e59a5d3, type: 3}
+  m_Name: YesIntro
+  m_EditorClassIdentifier: 
+  dialogue:
+  - Press A to move Left, and D to move Right.
+  - Press Spacebar to Jump. You can hold it down for a even bigger jump!
+  - Press Enter to interact with your fellow robots.
+  - You can pause the game at any time by hitting escape.
+  - You can also point your mouse at Objects to get more info.
+  - Good luck finding your body!
+  responces: []
+  profile: {fileID: 21300000, guid: 5d9a15cad5250f244932aff3734250af, type: 3}
+  speakerName: Tutorial

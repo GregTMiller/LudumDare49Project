@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4641d7eb5d322144cb68bf9e9e59a5d3, type: 3}
+  m_Name: WhereAreWe
+  m_EditorClassIdentifier: 
+  dialogue:
+  - BuddyBot Inc! All the robot shells were designed and created here.
+  - I was your biggest investor, hence why I got this limited edition BuddyBot!
+  - Even if the chrome coating has been worn off by the sand.....
+  - ....Any other questions?
+  responces:
+  - responceText: Who am I?
+    DO: {fileID: 11400000, guid: 0d8427ddbb659494fb02db5bad1c4932, type: 2}
+  - responceText: Repairs?
+    DO: {fileID: 11400000, guid: 0d8427ddbb659494fb02db5bad1c4932, type: 2}
+  - responceText: I gotta go, see ya!
+    DO: {fileID: 11400000, guid: b8fdc264b0605c842bf621934f49366f, type: 2}
+  profile: {fileID: 21300000, guid: a776917950f1dcb498126bab7732f4f7, type: 3}
+  speakerName: Junkbot

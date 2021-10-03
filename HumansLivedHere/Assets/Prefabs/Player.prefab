@@ -893,6 +893,7 @@ MonoBehaviour:
   sfxTrigger: {fileID: 1132188257582982506}
   sound:
   - {fileID: 8300000, guid: b920e01adaceb2f41b2274a5d68988df, type: 3}
+  - {fileID: 8300000, guid: 1aaa6ddae394a9e4488061c795a42c37, type: 3}
   - {fileID: 8300000, guid: 59a8a8bdbf8b6f44da53eb3c33daf175, type: 3}
 --- !u!114 &4180780460358568508
 MonoBehaviour:

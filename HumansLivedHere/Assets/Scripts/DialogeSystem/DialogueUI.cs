@@ -19,6 +19,7 @@ public class DialogueUI : MonoBehaviour
         typewritter = GetComponent<TypeWritterEffect>();
         responceChecker = GetComponent<ResponceHandlier>();
         closeDialogue();
+        ShowDialogue(testObject);
     }
 
     public void ShowDialogue(DialogueObject DO)

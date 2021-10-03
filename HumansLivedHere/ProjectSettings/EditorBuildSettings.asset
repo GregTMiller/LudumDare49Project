@@ -12,6 +12,15 @@ EditorBuildSettings:
     path: Assets/Scenes/TheDesert.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/LevelStreamingTest.unity
+    path: Assets/Scenes/TheLobby.unity
     guid: a5273e6cc62833346a42e1909b502cac
+  - enabled: 1
+    path: Assets/Scenes/TheOffice.unity
+    guid: a4dee832be6c6284ab3c215f8e406787
+  - enabled: 1
+    path: Assets/Scenes/TheLab.unity
+    guid: c729525227499a14eaada0284b9086dc
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: 52e2d3c772162f04c8479eb83b8659b6
   m_configObjects: {}

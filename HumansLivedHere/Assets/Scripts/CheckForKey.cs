@@ -43,6 +43,7 @@ public class CheckForKey : MonoBehaviour
         {
 
             canUse = other.GetComponent<PlayerMovement>().checkKey(requiredKey);
+            Debug.Log("canUse " + canUse);
             if(canUse && interactionType == checkType.Door)
             {
 
