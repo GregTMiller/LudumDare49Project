@@ -13,7 +13,6 @@ public class SettingsData
     public AudioMixer musicMixer;
 
     private void Start() {
-         SettingsData data = SaveSystem.loadSettings();
     }
     public SettingsData (SettingsMenu settings)
     {

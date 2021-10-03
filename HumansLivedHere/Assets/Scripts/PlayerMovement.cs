@@ -42,17 +42,28 @@ public class PlayerMovement : MonoBehaviour
 
 
     [Header("Physics")]
-    public Rigidbody2D RB;
+    Rigidbody2D RB;
+    Animator anim;
     public Transform groundCheck;
     public float groundDistance;
     public LayerMask groundMask;
     public Vector3 COM2;
     public string sceneName;
 
+    [Header("Dialogue")]
+    private DialogueUI DialogueUI;
+    public DialogueUI DUI => DialogueUI;
+    public IInteractable interact {get; set;}
+    [Header("Audio")]
+    public AudioSource sfxTrigger;
+    public AudioClip[] sound;
+
     // Start is called before the first frame update
    private void Start()
     {
         RB = gameObject.GetComponent<Rigidbody2D>();
+        anim = gameObject.GetComponent<Animator>();
+        DialogueUI =  GameObject.FindGameObjectWithTag("DUI").GetComponent<DialogueUI>();
         RB.centerOfMass = COM2;
     }
 
@@ -69,8 +80,28 @@ public class PlayerMovement : MonoBehaviour
 
     void movementCheck()
     {
+        if(DUI.IsOpen) return;
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundDistance, groundMask);
-        var movement = Input.GetAxis("Horizontal");
+        if(isGrounded)
+            anim.SetBool("IsJumping", false);
+        var movement = Input.GetAxisRaw("Horizontal");
+        Debug.Log(movement);
+        if (movement == 0f)
+        {
+            anim.SetBool("IsWalking", false);
+        }
+        else
+        {
+            anim.SetBool("IsWalking", true);
+            if(movement > 0.5f)
+            {
+                anim.SetBool("LeftOrRight", true);
+            }
+            else if(movement < -0.5f)
+            {
+                anim.SetBool("LeftOrRight", false);
+            }
+        }
         transform.position += new Vector3(movement,0,0) * Time.deltaTime * movementSpeed;
 
         
@@ -79,7 +110,7 @@ public class PlayerMovement : MonoBehaviour
             if(jumpMuti < jumpMutiMax)
             {
                 jumpMuti += 0.5f * Time.deltaTime;
-                Debug.Log("Charging......");
+                sfxTrigger.PlayOneShot(sound[0], 0.5f);
             }
             else
             {
@@ -96,7 +127,8 @@ public class PlayerMovement : MonoBehaviour
                 jumpMuti = 1f;
             }
             RB.AddForce(new Vector2(0,jumpForce * jumpMuti),ForceMode2D.Impulse);
-            Debug.Log("Jump!" + jumpMuti);
+            anim.SetBool("IsJumping", true);
+            anim.SetTrigger("Jump");
             jumpMuti = 0f;
             isGrounded = false;
             }
@@ -107,7 +139,11 @@ public class PlayerMovement : MonoBehaviour
     void interactCheck()
     {
 
-
+        if(Input.GetKey(KeyCode.Return) || Input.GetKey(KeyCode.JoystickButton0))
+        {
+                sfxTrigger.PlayOneShot(sound[1], 0.5f);
+                interact?.Interact(this);
+        }
 
     }
 

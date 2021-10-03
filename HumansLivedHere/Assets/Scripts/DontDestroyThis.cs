@@ -16,7 +16,7 @@ public class DontDestroyThis : MonoBehaviour
     {
         var currentScene = SceneManager.GetActiveScene();
         string sceneName = currentScene.name;
-        if(sceneName == "TitleScreen")
+        if(sceneName == "TitleScreen" || sceneName == "Credits")
         {
             Destroy(this.gameObject);
 

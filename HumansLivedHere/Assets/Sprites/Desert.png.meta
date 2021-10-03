@@ -432,7 +432,7 @@ TextureImporter:
         width: 214
         height: 109
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -440,6 +440,111 @@ TextureImporter:
       bones: []
       spriteID: 32b43d170fc5f9a20800000000000000
       internalID: 3071275658661546787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_14
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 436
+        width: 216
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1898b65218dbf2bd0800000000000000
+      internalID: -2652693293121697407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_15
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 591
+        width: 77
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b2cf53b9db7a8bb0800000000000000
+      internalID: -4932994266883439943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_16
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 591
+        width: 65
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53aabeb40c0c89820800000000000000
+      internalID: 2925299890117126709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_17
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 591
+        width: 81
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 604117aa6a516bb40800000000000000
+      internalID: 5455571804174226438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Desert_18
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 241
+        width: 57
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44b313dd1c945ad50800000000000000
+      internalID: 6747880713673063236
       vertices: []
       indices: 
       edges: []

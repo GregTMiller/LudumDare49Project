@@ -8,6 +8,8 @@ public class CollectKey : MonoBehaviour
     public int keyID;
     public Animation anim;
     Vector3 startPosition;
+    public AudioSource sfxTrigger;
+    public AudioClip sound;
     // Start is called before the first frame update
     void Start()
     {
@@ -38,7 +40,7 @@ public class CollectKey : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other) {
         if(other.tag == "Player")
         {
-
+            sfxTrigger.PlayOneShot(sound, 0.5f);
             other.GetComponent<PlayerMovement>().collectKey(keyID);
             anim.CrossFade("Shrink", 0.3F, PlayMode.StopSameLayer); 
 
