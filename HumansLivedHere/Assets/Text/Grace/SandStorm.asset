@@ -23,4 +23,4 @@ MonoBehaviour:
   - responceText: Gotta go, bye!
     DO: {fileID: 11400000, guid: f7ee3329cf95791488249e809df764e1, type: 2}
   profile: {fileID: 21300000, guid: 9b80f524a41fb0445a92837e99bea300, type: 3}
-  speakerName: 
+  speakerName: Grace
