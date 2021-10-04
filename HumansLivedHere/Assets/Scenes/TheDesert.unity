@@ -1734,7 +1734,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &840890579
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9947,7 +9947,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1621761453
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10356,7 +10356,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1874610969
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10452,7 +10452,7 @@ Transform:
   - {fileID: 191937631}
   - {fileID: 1754464451}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1972187760
 GameObject:
@@ -27657,7 +27657,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2094193995191040532, guid: 6ce0759acf89abb4a80d6b45f14947d7, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2094193995191040532, guid: 6ce0759acf89abb4a80d6b45f14947d7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -27702,6 +27702,10 @@ PrefabInstance:
     - target: {fileID: 2094193995191040534, guid: 6ce0759acf89abb4a80d6b45f14947d7, type: 3}
       propertyPath: m_Name
       value: PlayerSpawner
+      objectReference: {fileID: 0}
+    - target: {fileID: 2094193995191040534, guid: 6ce0759acf89abb4a80d6b45f14947d7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6ce0759acf89abb4a80d6b45f14947d7, type: 3}

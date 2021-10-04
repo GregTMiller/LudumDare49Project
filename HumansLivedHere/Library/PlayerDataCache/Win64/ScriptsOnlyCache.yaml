@@ -36,7 +36,6 @@ ScriptsOnlyBuild:
     - UnityEngine.U2D.SpriteShape
     - UnityEngine.U2D.SpriteShapeController
     Unity.2D.Tilemap.Editor.dll:
-    - UnityEditor.Tilemaps.GridBrush
     - UnityEditor.Tilemaps.GridPaintingState
     - UnityEditor.Tilemaps.GridPaletteBrushes
     - UnityEditor.Tilemaps.GridPalettes
@@ -2208,4 +2207,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/TheOffice.unity
   - Assets/Scenes/TheLab.unity
   - Assets/Scenes/Credits.unity
-  playerPath: G:/Git/LudumDare49/Builds/Windows/HumansLivedHere.exe
+  playerPath: G:/Git/LudumDare49/LudumDare49Project/Builds/HumansLivedHere.exe

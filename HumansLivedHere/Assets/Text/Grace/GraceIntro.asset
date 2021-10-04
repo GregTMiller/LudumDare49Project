@@ -17,10 +17,10 @@ MonoBehaviour:
   - How have you been? Hopefully the sand storm wasn't too bad.
   responces:
   - responceText: Who are you?
-    DO: {fileID: 0}
+    DO: {fileID: 11400000, guid: f09df4cc1e101384790d5083e7c2ee84, type: 2}
   - responceText: Why is it so sandy?
-    DO: {fileID: 0}
+    DO: {fileID: 11400000, guid: 3278230270523364baf95661c1fe5bd9, type: 2}
   - responceText: Gotta go, talk to you later!
-    DO: {fileID: 0}
+    DO: {fileID: 11400000, guid: f7ee3329cf95791488249e809df764e1, type: 2}
   profile: {fileID: 21300000, guid: 9b80f524a41fb0445a92837e99bea300, type: 3}
   speakerName: Grace
